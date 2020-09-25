@@ -3,7 +3,7 @@ h1 {
 }
 
 /* Colours */
-nav, nav.brand-logo {
+nav, nav.brand-logo, .side-nav li>a  {
      color: lightgray;
 }
 
@@ -14,12 +14,12 @@ nav, nav.brand-logo {
     flex-direction: column;
   }
 
-
-
-nav, .page-footer{
+nav, .page-footer, .side-nav{
     background-color: black;
-
 }
+
+
+
   main {
     flex: 1 0 auto;
   }
@@ -27,3 +27,14 @@ nav, .page-footer{
 .socialIcons{
       display: inline;
   }
+
+  .page-footer{
+    text-align: center;
+}
+
+.page-footer .footer-copyright{
+    padding: 0;
+}
+.copyright, p, .row{
+    margin: 0;
+}
