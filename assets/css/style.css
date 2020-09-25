@@ -2,12 +2,24 @@ h1 {
     color:#ff2800;
 }
 
+/* Colours */
+nav, nav.brand-logo {
+     color: lightgray;
+}
+
   body {
+      background-color: rgb(238, 236, 236);
     display: flex;
     min-height: 100vh;
     flex-direction: column;
   }
 
+
+
+nav, .page-footer{
+    background-color: black;
+
+}
   main {
     flex: 1 0 auto;
   }
