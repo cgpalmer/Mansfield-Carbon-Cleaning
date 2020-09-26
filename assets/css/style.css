@@ -18,6 +18,7 @@ h1 {
     min-height: 100vh;
     flex-direction: column;
     text-align: center;
+    font-family: 'Cinzel', serif;
   }
 
 nav, .page-footer, .side-nav{
