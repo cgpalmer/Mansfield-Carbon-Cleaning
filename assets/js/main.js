@@ -8,3 +8,21 @@
       onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     }
  );
+
+
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+
+    mainDelay = setTimeout(animationDelay, 1000)
+    function animationDelay(){
+    $(".to-right").css('background-position','left');
+
+    secondAnimationDelay =  setTimeout(secondAnimation, 750);
+    function secondAnimation() {
+       $(".to-left").css('background-position','right');
+}
+    };
+ 
+
+});

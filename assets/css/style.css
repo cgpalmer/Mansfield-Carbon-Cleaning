@@ -27,6 +27,64 @@ nav, .page-footer, .side-nav{
 
 
 
+/* Jumbotron */
+.loadAnimation{
+    color:black;
+    height: 100vh;
+    background-color: black;
+}
+
+.animatedWord{
+    padding: 2rem;
+    margin: 0;
+    color: black;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  display:block;
+  background-size: 200% 200%;
+  transition: background-position 0.75s;
+}
+
+.to-right{
+  background-image: linear-gradient(to right, lightgray 50%, black 0);
+  background-position: right;
+}
+
+
+.to-left{
+  background-image: linear-gradient(to left, lightgray 50%, black 0);
+  background-position: left;
+}
+
+
+
+
+
+.fade-in {
+  animation: fadeIn ease 1s forwards;
+  -webkit-animation: fadeIn ease 1s forwards;
+  -moz-animation: fadeIn ease 1s forwards;
+  -o-animation: fadeIn ease 1s forwards;
+  -ms-animation: fadeIn ease 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.wordOne{
+    background-color: black;
+}
+
+
   main {
     flex: 1 0 auto;
   }
@@ -46,26 +104,4 @@ nav, .page-footer, .side-nav{
 }
 .copyright, p, .row{
     margin: 0;
-}
-
-.loadAnimation{
-    color:black;
-    height: 100vh;
-}
-
-.fade-in {
-  animation: fadeIn ease 1s forwards;
-  -webkit-animation: fadeIn ease 1s forwards;
-  -moz-animation: fadeIn ease 1s forwards;
-  -o-animation: fadeIn ease 1s forwards;
-  -ms-animation: fadeIn ease 1s forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
 }
