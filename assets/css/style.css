@@ -5,7 +5,7 @@ nav, nav.brand-logo, .side-nav li>a  {
 }
 
 h1 {
-    color:black;
+    color:lightgray;
 }
 
 
@@ -60,9 +60,6 @@ nav, .page-footer, .side-nav{
 }
 
 
-
-
-
 .fade-in {
   animation: fadeIn ease 1s forwards;
   -webkit-animation: fadeIn ease 1s forwards;
@@ -88,6 +85,23 @@ nav, .page-footer, .side-nav{
   main {
     flex: 1 0 auto;
   }
+
+/* Loaded header section */
+
+#loadedHeader, #info{
+    display: none;
+}
+
+.loadedHeadingWords{
+    display: inline-block;
+    color: black;
+}
+
+#id{
+    height: 80vh;
+}
+
+/* Footer */
 
 .socialIcons{
       display: inline;

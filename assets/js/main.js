@@ -23,6 +23,12 @@ $( document ).ready(function() {
        $(".to-left").css('background-position','right');
 }
     };
+
+    loadedHeaderDelay = setTimeout(displayLoadedHeader, 3000);
+    function displayLoadedHeader(){
+    $(".loadAnimation").slideUp();
+    $("#loadedHeader, #info").css("display","block");
+    }
  
 
 });
