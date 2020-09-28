@@ -32,3 +32,23 @@ $( document ).ready(function() {
  
 
 });
+
+
+// Sending emails
+
+function sendEnquiry(enquiryForm) {
+    emailjs.send("MansCarbClean", "enquiryTemplate", {
+        "from_name": enquiryForm.name.value,
+        "from_email": enquiryForm.email.value,
+        "from_phone": enquiryForm.phone.value,
+        "from_enquiry": enquiryForm.enquiryMessage.value
+    })
+    .then(
+        function(response) {
+            alert("sent");
+        },
+        function(error){
+            alert("Something has gone wrong. Please refresh the page and try again.")
+        });
+    return false;
+}

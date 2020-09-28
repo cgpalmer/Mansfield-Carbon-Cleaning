@@ -7,6 +7,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_1aQllGFFLhD2Av7U81esZ");
+   })();
+</script>
     <title>Document</title>
 </head>
 <body>
@@ -51,26 +59,26 @@
         <h5>Email</h5>
         <div class="container-fluid">
             <div class="row">
-                <form class="col s12">
+                <form onsubmit="return sendEnquiry(this);" class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="name" type="text" class="validate">
+                            <input id="name" type="text" class="validate" required>
                              <label for="name">Name</label>
                             </div>
                             <div class="input-field col s12">
                             <i class="material-icons prefix">phone</i>
-                            <input id="phone" type="tel" class="validate">
+                            <input id="phone" type="tel" class="validate" required>
                              <label for="phone">Telephone</label>
                             </div>
                              <div class="input-field col s12">
                             <i class="material-icons prefix">email</i>
                             <input id="email" type="email" class="validate">
-                            <label for="email" data-error="Email invalid." data-success="Email valid.">Email</label>
+                            <label for="email" data-error="Email invalid." data-success="Email valid." required>Email</label>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">edit</i>
-                                <textarea id="enquiryMessage" class="materialize-textarea"></textarea>
+                                <textarea id="enquiryMessage" class="materialize-textarea" required></textarea>
                                 <label for="enquiryMessage">Enquiry</label>
                             </div>
                             <button type="submit">Send Enquiry</button>
