@@ -1,7 +1,7 @@
 {
     "name": "The Book Club",
     "short_name": "Book Club",
-    "start_url": "/index.html",
+    "start_url": "https://cgpalmer.github.io/Mansfield-Carbon-Cleaning/index.html",
     "display": "standalone",
     "background_color": "#F4F4F4",
     "theme_color": "#F4F4F4",
