@@ -7,15 +7,20 @@
     "theme_color": "#F4F4F4",
     "orientation": "portrait-primary",
     "icons": [
-        {
-            "src": "logo.jpg",
+            {
+            "src": "logo.png",
             "sizes": "92x92",
-            "type": "image/jpg"
+            "type": "image/png"
         },
         {
-            "src": "logo.jpg",
+            "src": "logo.png",
             "sizes": "144x144",
-            "type": "image/jpg"
-        }
+            "type": "image/png"
+        },
+        {
+            "src": "logo.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        }   
     ]
 }
