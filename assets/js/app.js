@@ -1,4 +1,4 @@
 navigator.serviceWorker &&
-navigator.serviceWorker.register('SW.js').then(function (registration)
+navigator.serviceWorker.register('sw.js').then(function (registration)
 {
 });
