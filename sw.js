@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v1';
+const staticCacheName = 'thebookclub-static';
 const assets = [
   '/',
   '/index.html',
